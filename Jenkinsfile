@@ -16,7 +16,7 @@ pipeline{
     stages {
         stage('Checkout from SCM'){
             steps {
-                git branch: 'main', url: 'https://github.com/Milan-Johnson/complete-prodcution-e2e-pipeline'
+                git(url: 'https://github.com/Milan-Johnson/curriculum-app', branch: 'master')
             }
         }
     }
