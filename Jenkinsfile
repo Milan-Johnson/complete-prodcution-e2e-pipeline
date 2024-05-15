@@ -11,14 +11,10 @@ pipeline{
                 cleanWs()
             }
         }
-    }
-
-    stages {
         stage('Checkout from SCM'){
             steps {
                 git(url: 'https://github.com/Milan-Johnson/curriculum-app', branch: 'master')
             }
         }
     }
-
 }
