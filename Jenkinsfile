@@ -16,6 +16,11 @@ pipeline{
                 git(url: 'https://github.com/Milan-Johnson/curriculum-app', branch: 'master')
             }
         }
+        stage('Jdk version'){
+            steps {
+                sh "java --version"
+            }
+        }
         stage('Build Application'){
             steps {
                 sh "mvn clean package"
